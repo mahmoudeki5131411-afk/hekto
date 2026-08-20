@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+:root {
+    --primary: #FB2E86;
+    --mainFont: "Lato", sans-serif;
+}
+
+.btn {
+    border: none;
+    outline: border;
+    color: #fff;
+    padding: 16px 40px;
+    border-radius: 2px;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+}
+
+.btn-success {
+    background-color: #08D15F;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container {
+    width: calc(100% - 320px);
+    margin: auto;
+}
