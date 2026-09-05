@@ -89,3 +89,18 @@ ul {
 .gap-6{
     gap: 30px;
 }
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-primary{
+    color: var(--primary);
+}
+.text-secondary{
+    color:#151875;
+}
