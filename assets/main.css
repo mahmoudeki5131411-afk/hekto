@@ -5,7 +5,9 @@ body{
 .header{
     padding: 57px 0;
 }
-
+.header .row{
+    justify-content: space-between;
+}
 .header ul{
     display: flex;
     flex-wrap: wrap;
@@ -55,13 +57,49 @@ body{
 
 /* end header */
 
-/* start products */
+/* start hero */
+
+.hero{
+    background-color: #F2F0FF;
+    padding: 50px 0;
+}
+.hero .row{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.hero-content{
+    padding: 10px;
+    align-items: flex-start;
+}
+.hero-content h2{
+    font-family: Josefin Sans;
+    font-size: 35px;
+}
+.hero-content .txt{
+    color: #8A8FB9;
+}
+.hero-content a{
+    font-family: Josefin Sans;
+}
+.hero-img{
+    text-align: center;
+}
+.hero-img img{
+    width: 80%;
+    object-fit: contain;
+}
+@media screen and (max-width:576px) {
+    .hero .row{
+        flex-direction: column;
+    }
+}
+
+/* end hero */
+
+/* start featured-product */
 
 .featured-product{
     padding: 50px 0;
-}
-.featured-product h2{
-    margin-bottom: 30px;
 }
 .featured-product .row{
     justify-content: flex-start;
@@ -70,26 +108,44 @@ body{
 .product{
     position: relative;
 }
+.product .butt-det button{
+    border: none;
+    font-size: 10px;
+    color: #fff;
+    padding: 7px 14px;
+    border-radius: 2px;
+    background-color: #08D15F;
+}
+.butt-det{
+    position: absolute;
+    bottom: 135px;
+    right: 100px;
+    opacity: 0;
+    transition: all ,6s;
+}
 .pay{
     position: absolute;
     top: 20px;
     left: 18px;
     width: 20px;
-    display: none;
+    opacity: 0;
+    transition: all ,6s;
 }
 .heart{
     position: absolute;
     top: 20px;
     left: 58px;
     width: 20px;
-    display: none;
+    opacity: 0;
+    transition: all ,6s;
 }
 .plus{
     position: absolute;
     top: 20px;
     left: 91px;
     width: 20px;
-    display: none;
+    opacity: 0;
+    transition: all ,6s;
 }
 .featured-product .product{
     flex: 1 0 200px;
@@ -116,6 +172,7 @@ body{
 .product .img{
     background-color: #F6F7FB;
     padding: 30px;
+    transition: all ,6s;
 }
 .product .img img{
     width: 200px;
@@ -152,16 +209,22 @@ body{
 .product:hover .product-info span{
     color: #FFFFFF;
 }
+.product:hover .butt-det{
+    opacity: 1;
+}
 .product:hover .pay{
-    display: block;
+    opacity: 1;
 }
 .product:hover .heart{
-    display: block;
+    opacity: 1;
 }
 .product:hover .plus{
-    display: block;
+    opacity: 1;
 }
-/* end products */
+.product:hover .img{
+    background-color: white;
+}
+/* end featured-product */
 
 /* start newslater */
 .newslater{
@@ -180,6 +243,14 @@ body{
 }
 .shop-btn:hover{
     background-color: #0d0e43;
+}
+@media screen and (max-width:576px) {
+    .newslater h2{
+        font-size: 25px;
+    }
+    .shop-btn{
+        padding: 12px 30px;
+    }
 }
 
 /* end newslater */
@@ -230,7 +301,12 @@ body{
     align-items: flex-start;
     width: calc( (100% - 150px) /2 );
 }
-
+.search input{
+    width: 200px;
+}
+.search button{
+    border-radius: 3px;
+}
 .footer .right-side{
     width: calc( (100% - -80px) /2 );
 }

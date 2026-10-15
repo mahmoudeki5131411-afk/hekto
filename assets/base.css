@@ -34,7 +34,7 @@ ul {
 }
 .row{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
 }
@@ -103,4 +103,13 @@ ul {
 }
 .text-secondary{
     color:#151875;
+}
+.ali-items{
+    align-items: center;
+}
+.stle-h2{
+font-family: Josefin Sans;
+font-size: 30px;
+color: #151875;
+margin-bottom: 40px;
 }
