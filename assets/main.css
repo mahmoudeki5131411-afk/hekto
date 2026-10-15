@@ -378,6 +378,41 @@ body{
 
 /* end support */
 
+/* start trending */
+
+.Trending_Products{
+    padding: 50px 0;
+}
+.Trending_pr{
+    padding: 15px;
+    box-shadow: 0px 8px 40px 0px #31208A0D;
+    border-radius: 2px;
+}
+.Trending_pr .img{
+    background-color: #F5F6F8;
+    padding: 20px;
+}
+.Trending_pr .img img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.Trending_pr .details{
+    padding: 20px;
+}
+.Trending_pr h3{
+    color: #151875;
+}
+.Trending_pr div{
+    color: #151875;
+    align-items: center;
+}
+.Trending_pr .colo{
+    color: #1518754D;
+    font-size: 12px;
+}
+/* end trending */
+
 /* start newslater */
 .newslater{
     background-image: url(./img/public/Rectangle.webp);
