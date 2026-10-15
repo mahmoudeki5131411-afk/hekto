@@ -515,6 +515,51 @@ body{
 
 /* end clients */
 
+/* start leatest-blog */
+
+.leatest-blog{
+    padding: 80px 0;
+}
+.blog{
+    box-shadow: 0px 8px 40px 0px #31208A0D;
+    width: 360px;
+    height: 520px;
+}
+.blog .img img{
+    border-radius: 5px;
+    width: 100%;
+}
+.blog_details{
+    padding-top: 15px;
+    padding-left: 17px;
+}
+.blog_details span{
+    color: #151875;
+}
+.blog_details h3{
+    color: #151875;
+    font-family: Josefin Sans;
+    transition: all ,6s;
+}
+.blog_details p{
+    line-height: 30px;
+    color: #72718F;
+}
+.blog_details a{
+    text-decoration: underline;
+    color: #151875;
+    padding-bottom: 35px;
+    transition: all ,6s;
+}
+.blog:hover h3{
+    color: #FB2E86;
+}
+.blog:hover a{
+    color: #FB2E86;
+}
+
+/* end leatest-blog */
+
 /* start footer */
 
 .footer{
