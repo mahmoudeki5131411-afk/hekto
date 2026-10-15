@@ -226,6 +226,136 @@ body{
 }
 /* end featured-product */
 
+/* start leatest-products */
+
+.leatest-products{
+    padding: 50px 0;
+}
+.leatest-products .list{
+    gap: 60px;
+    justify-content: center;
+    color: #151875;
+}
+.leatest-products .list a{
+    color: #151875;
+}
+.leatest-products .list .active{
+    color: #FB2E86;
+    text-decoration-line: underline;
+}
+.leatest-products .container .row{
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+.leatest-products .container{
+    padding-top: 58px;
+}
+.l-product{
+    flex: 1 0 200px;
+    position: relative;
+    transition: all ,6s;
+}
+.badge-sale{
+    position: absolute;
+    top: 35px;
+    left: 40px;
+    opacity: 0;
+    transition: all ,6s;
+}
+.badge-sale img{
+    width: 70px;
+}
+.pay_l{
+    position: absolute;
+    padding: 8px;
+    border-radius: 50%;
+    left: 20px;
+    bottom: 170px;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    transition: all ,6s;
+}
+.heart_l{
+    position: absolute;
+    padding: 8px;
+    border-radius: 50%;
+    left: 20px;
+    bottom: 130px;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    transition: all ,6s;
+}
+.plus_l{
+    position: absolute;
+    padding: 8px;
+    border-radius: 50%;
+    left: 20px;
+    bottom: 90px;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    transition: all ,6s;
+}
+.l-product .img{
+    background-color: #F7F7F7;
+    padding: 40px;
+    transition: all ,6s;
+    
+}
+.l-product .img img{
+    width: 280px;
+    height: 280px;
+    object-fit: contain;
+}
+.l-product .l-product-details{
+    padding-top: 10px;
+    font-family: Josefin Sans;
+    color: #151875;
+    font-size: 14px;
+}
+.l-product .l-product-details .dash{
+    text-decoration-line: line-through;
+    color: #FB2448;
+    font-size: 12px;
+    padding-right: 15px;
+    padding-top: 3px;
+}
+.l-product:hover .img{
+    background-color: white;
+}
+.l-product:hover .badge-sale{
+    opacity: 1;
+}
+.l-product:hover .pay_l{
+    opacity: 1;
+}
+.l-product:hover .heart_l{
+    opacity: 1;
+}
+.l-product:hover .plus_l{
+    opacity: 1;
+}
+.pay_l:hover{
+    background-color: #F5F6F8;
+}
+.heart_l:hover{
+    background-color: #F5F6F8;
+}
+.plus_l:hover{
+    background-color: #F5F6F8;
+}
+@media screen and (max-width:420px) {
+    .l-product .img img{
+        width: 200px;
+        height: 150px;
+    }
+}
+
+/* end leatest-products */
+
 /* start newslater */
 .newslater{
     background-image: url(./img/public/Rectangle.webp);
