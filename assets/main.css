@@ -356,6 +356,28 @@ body{
 
 /* end leatest-products */
 
+/* start support */
+
+.Shopex{
+    padding: 50px 0;
+    font-family: Josefin Sans;
+}
+.support{
+    box-shadow: 0px 8px 40px 0px #31208A0D;
+    border-radius: 2px;
+    padding: 60px 30px;
+}
+.support h3{
+    color: #151875;
+}
+.support p{
+    font-family: Lato;
+    color: #1A0B5B4D;
+    font-size: 16px;
+}
+
+/* end support */
+
 /* start newslater */
 .newslater{
     background-image: url(./img/public/Rectangle.webp);
